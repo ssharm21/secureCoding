@@ -1,26 +1,27 @@
 <section class="Index Page">
 
 
-<h1> Sessions </h1>
-
 <script>
 	function setcookie(){
 	// var xmlHttp = new XMLHttpRequest();
  //    xmlHttp.open( "GET","http://localhost:8888/server", false ); // false for synchronous request
- //    xmlHttp.send( null );
- 	var expireDate = new Date();
- 	expireDate.setTime(expireDate.getTime() + (12*60*60*1000));
- 	document.cookie = document.getElementById("name") + "=" + document.getElementById("pwd") + ";" +expireDate;
- 	var x = document.getElementById("form").elements.length;
-    window.alert("bhakti");
+ // /*   xmlHttp.send( null );
+
+ 	var d = new Date();
+    d.setTime(d.getTime() + (24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = document.getElementById('form').name.value + "=" + document.getElementById('form').pwd.value +"; " + expires;
+    alert(document.getElementById('form').name.value + "=" + document.getElementById('form').pwd.value +"; " + expires);
+}
 
 </script>
+<h1> Sessions </h1>
 
 <form name="login" action="index_submit" id = "form">
   <ul>
-    <li><label for="usermail">User ID</label>
+    <li><label for="usermail"> User ID </label>
     <input id = "name" type="text" name="username" placeholder="User name" required></li>
-    <li><label for="password">Password</label>
+    <li><label for="password"> Password </label>
     <input id = "pwd" type="password" name="password" placeholder="password" required></li>
   </ul> 
    <input type="submit" value="Submit" onclick = "setcookie()">

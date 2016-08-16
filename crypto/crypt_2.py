@@ -22,4 +22,4 @@ if __name__ == "__main__":
 	if (plain_text == decrypted_text):
 		print "Successful"
 	else:
-		print "Failed..Accept challenge?"
+		print "Failed"

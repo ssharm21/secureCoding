@@ -19,6 +19,6 @@ if __name__ == "__main__":
 	cipher_text = encrypt(plain_text, key, iv)
 	decrypted_text = decrypt(cipher_text, key, iv)
 	if (plain_text == decrypted_text):
-		print "Successful..Good job!"
+		print "Successful"
 	else:
 		print "Failed"

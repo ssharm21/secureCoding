@@ -9,10 +9,10 @@ int attack(char buffer[10], char *input)
 
 void main()
 {
-  char buffer[10], *input;
+  char buffer[10], input[20];
   int ret;
   printf("\nEnter the string to be stored : ");
-  gets(input);
+  scanf("%s",input);
   ret = attack(buffer, input);
   printf("\n%d", ret);
 }

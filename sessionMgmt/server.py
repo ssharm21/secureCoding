@@ -3,11 +3,11 @@
 import tornado.ioloop
 import tornado.web
 import random
-
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world")
-        print "Bhakti was here"
+// Add session code here and construct a response.
+// You may use any other server framework as well 
 
 def make_app():
     return tornado.web.Application([
